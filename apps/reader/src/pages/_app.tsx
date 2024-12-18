@@ -26,6 +26,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   )
 }
 
-const Fallback: React.FC = () => {
-  return <div>Something went wrong.</div>
-}
+// const Fallback: React.FC = () => {
+//   return <div>Something went wrong.</div>
+// }
