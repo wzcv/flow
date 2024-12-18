@@ -15,7 +15,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   if (router.pathname === '/success') return <Component {...pageProps} />
 
   return (
-    <ErrorBoundary fallback={<Fallback />}>
       <LiteralProvider>
         <RecoilRoot>
           <Theme />
@@ -24,7 +23,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           </Layout>
         </RecoilRoot>
       </LiteralProvider>
-    </ErrorBoundary>
   )
 }
 
